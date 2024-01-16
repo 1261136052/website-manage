@@ -51,6 +51,7 @@ export class article{
     publishDate:Date
     weight:number
     likeCount:number
+    commentCount:number
 }
 
 export class category2 {
@@ -104,4 +105,11 @@ export class GoodsOrderDto {
     vendor: string;
     title: string;
     vendorId: bigint;
+}
+
+export class likeDto {
+    articleId: bigint 
+    userId: bigint 
+    userName: string
+    likeDate: Date
 }
