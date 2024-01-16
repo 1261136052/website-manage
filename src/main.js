@@ -52,11 +52,11 @@ let routes = [
                 }, component: () => import('./views/mainViews/Order.vue')
             },{
                 path: "/main/goods", meta: {
-                    title: '商品订单'
+                    title: '商品列表'
                 }, component: () => import('./views/mainViews/Goods.vue')
             },{
                 path: "/main/article", meta: {
-                    title: '商品订单'
+                    title: '文章列表'
                 }, component: () => import('./views/mainViews/Article.vue')
             },]
     }
