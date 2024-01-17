@@ -112,7 +112,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
                     })
                     store.testA(response.data.data)
                     router.push({
-                        path: '/main',
+                        path: '/main/main',
                     })
                 }
                 console.log(response.status)

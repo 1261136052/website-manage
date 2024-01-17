@@ -113,3 +113,13 @@ export class likeDto {
     userName: string
     likeDate: Date
 }
+
+export class StatisticsDto {
+    articleCount: number;
+    goodsCount: number;
+    orderCount: number;
+    commentCount: number;
+    likeCount: number;
+    userCount: number;
+    chatCount: number;
+}

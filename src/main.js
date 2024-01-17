@@ -58,6 +58,10 @@ let routes = [
                 path: "/main/article", meta: {
                     title: '文章列表'
                 }, component: () => import('./views/mainViews/Article.vue')
+            },{
+                path: "/main/main", meta: {
+                    title: '文章列表'
+                }, component: () => import('./views/mainViews/First.vue')
             },]
     }
 ]
