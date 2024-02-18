@@ -20,7 +20,7 @@
             <template #default="scope">
                 <el-button link type="primary" size="small" @click="deleteCategory(scope.$index, scope.row)">删除</el-button>
                 <el-button link type="primary" size="small"
-                    @click="dialogFormVisible = true, initCategory(scope.$index, scope.row)">修改</el-button>
+                    @click="initCategory(scope.$index, scope.row),dialogFormVisible = true">修改</el-button>
             </template>
         </el-table-column>
     </el-table>
@@ -89,7 +89,7 @@ const form = reactive({
 })
 const initCategory= (index, row) => {
     form.id = row.id
-    form.categoryName = row.userName
+    form.categoryName = row.categoryName
 }
 
 

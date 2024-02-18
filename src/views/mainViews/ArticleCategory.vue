@@ -89,6 +89,7 @@ const form = reactive({
 })
 const initCategory= (index, row) => {
     form.id = row.id
+    form.name = row.name
 }
 
 

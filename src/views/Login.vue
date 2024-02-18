@@ -88,10 +88,9 @@ const submitForm = (formEl: FormInstance | undefined) => {
         if (valid) {
             axios.post('/admin/login', {
                 account: ruleForm.account,
-                pwd: ruleForm.pass
+                pwd: ruleForm.pass,
             }).then(response => {
                 if (response.status == 500) {
-                    console.log("a")
                     ElNotification({
                         title: 'error',
                         message: response.status + '未知错误',
@@ -99,6 +98,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
                     })
                 }
                 if (response.data.code == -1) {
+                    console.log(response)
                     ElNotification({
                         title: 'error',
                         message: '账号或密码错误',
@@ -115,10 +115,8 @@ const submitForm = (formEl: FormInstance | undefined) => {
                         path: '/main/main',
                     })
                 }
-                console.log(response.status)
-
             })
-
+            // console.log(1)
             console.log('submit!')
         } else {
             console.log('error submit!')
